@@ -1,4 +1,6 @@
 <script>
+  import Gerbang from "../library/kunci-terbaru/src/Gerbang.svelte";
+
   let angka = 0;
   // Fungsi untuk mengambil angka acak antara 1 dan 604
   function getRandomNumber() {
@@ -15,6 +17,8 @@
   // console.log("Angka acak antara 1 dan 604:", angkaAcak);
 </script>
 
-<div class="p-5 min-h-screen flex justify-center items-center">
-  <div class="text-5xl">{angka}</div>
-</div>
+<Gerbang namaAplikasi="Ngaji">
+  <div class="p-5 min-h-screen flex justify-center items-center">
+    <div class="text-5xl">{angka}</div>
+  </div>
+</Gerbang>
